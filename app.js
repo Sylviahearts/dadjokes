@@ -7,9 +7,7 @@ const axios = require('axios');
 const app = express();
 dotenv.config();
 const port = Number(process.env.PORT)|| 4000;
-// app.get('/', async (req, res) =>{
-//   res.send('Hello World')
-// })
+
 
 const options = {
   method: 'GET',
