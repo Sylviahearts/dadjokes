@@ -2,8 +2,6 @@ const express = require('express');
 const dotenv = require('dotenv');
 const axios = require('axios');
 
-
-
 const app = express();
 dotenv.config();
 const port = Number(process.env.PORT)|| 4000;
@@ -33,7 +31,6 @@ app.get('/', async (req, res) =>{
     console.error(error);
   }
 } );
-
 
 // Setting up the express server
 app.listen(port, ()=>{
